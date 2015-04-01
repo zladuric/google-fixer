@@ -1,0 +1,23 @@
+{
+  "name": "com.google fixer",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Fixes the bug in http://com.google website that shows the site mirrored.",
+  "homepage_url": "https://github.com/zladuric/google-fixer",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["src/fixpage.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "Flip site"
+  }
+}
